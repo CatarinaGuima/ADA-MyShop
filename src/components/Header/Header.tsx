@@ -2,6 +2,7 @@ import * as S from "./styles";
 import { FiLogIn, FiLogOut, FiShoppingCart } from "react-icons/fi";
 
 export const Header: React.FC = () => {
+  const isLogged = false;
   return (
     <S.StyledHeader>
       <S.Wrapper>
@@ -9,8 +10,8 @@ export const Header: React.FC = () => {
 
         <S.ButtonWrapper>
           <S.AuthButton>
-            Login
-            <FiLogIn />
+            {isLogged ? "Logout" : "Login"}
+            {isLogged ? <FiLogOut/> : <FiLogIn/>}
           </S.AuthButton>
           <S.CartButton>
             Carrinho
