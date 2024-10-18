@@ -1,4 +1,3 @@
-import { createInterface } from "node:readline";
 import * as S from "./styles";
 
 interface CartProps {
@@ -12,3 +11,4 @@ export const Cart: React.FC<CartProps> = ({ showCart }) => {
         </S.Container>
     )
 }
+
