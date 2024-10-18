@@ -1,5 +1,5 @@
 # MyShop
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7971226f-fa25-40a1-a50c-7d26b4feedb3/deploy-status)](https://app.netlify.com/sites/dessertsfood/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91f3eca4-970e-4023-938c-78c60d92dbc8/deploy-status)](https://app.netlify.com/sites/adamyshop/deploys)
 
 Projeto desenvolvido em React.js.
 
