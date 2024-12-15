@@ -21,6 +21,7 @@ Este projeto foi desenvolvido para portfólio com as seguintes tecnologias:
 - JavaScript
 - TypeScript
 - React.js
+- Redux
 - [vs code](https://code.visualstudio.com/download)
 
 ---
