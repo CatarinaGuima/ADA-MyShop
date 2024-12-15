@@ -47,10 +47,6 @@ export const AuthButton = styled.button<AuthButtonProps>`
   cursor: pointer;
   transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #218838; 
-  }
-
   svg {
     font-size: 1rem;
   }
