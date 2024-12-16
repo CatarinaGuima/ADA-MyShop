@@ -5,6 +5,7 @@ import * as S from "./styles";
 import { Cart } from "../Cart/Cart";
 import { useDispatch, useSelector } from "react-redux";
 import { RootReducer } from "../../redux/root-reducer";
+import { login, logout } from "../../redux/User/user-slice";
 
 export const Header: React.FC = () => {
   const {user} = useSelector((rootReducer: RootReducer) => rootReducer.userReducer);
@@ -18,17 +19,15 @@ export const Header: React.FC = () => {
     //usuário não está logado
     if (user === null) {
       // despachar a action de login
-      dispatch({type: "user/login",
-        payload: {
-          name: 'Catarina Guimarães',
-          email: 'catarina.guimaraes15@gmail.com',
-        }
-      });
+      dispatch(login({
+        name: 'Catarina Guimarães',
+        email: 'catarina.guimaraes15@gmail.com',
+      }));
     } else {
       // despachar a action de logout
-      dispatch({type: "user/logout"});
+      dispatch(logout({}));
     }
-  }
+  };
 
   return (
     <S.StyledHeader>
